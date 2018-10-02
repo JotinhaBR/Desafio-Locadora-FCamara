@@ -1,7 +1,7 @@
 var config = require('../config');
 
 // fução para deletar um dado em uma collection
-function deletar(cName, query, database = config.mongodb.database){
+function remove(cName, query, database = config.mongodb.database){
   return new Promise((resolve, reject)=>{
 
     var config = require('../config');
@@ -27,4 +27,4 @@ function deletar(cName, query, database = config.mongodb.database){
 }
 
 // exporta a função para poder ser usada em outros locais
-module.exports = { deletar };
+module.exports = { remove };

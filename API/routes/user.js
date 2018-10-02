@@ -1,9 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var config = require('../config');
-var dbInserir = require('../banco/inserir');
-var dbBusca = require('../banco/buscar');
-var dbDeletar = require('../banco/deletar');
+var dbFunctions = require('../banco/dbFunctions');
 
 
 
