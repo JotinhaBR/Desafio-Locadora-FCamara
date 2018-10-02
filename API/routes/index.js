@@ -1,11 +1,11 @@
 var express = require('express');
 var router = express.Router();
-var dbBusca = require('../banco/buscar');
+var mongodbFun = require('../mongodbFun/mongodbFun');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
 
-var busca = dbBusca.buscar("usuarios");
+var busca = mongodbFun.find("usuarios");
 busca.then(function(value) {
   res.json(value); // Success!
 }, function(reason) {
