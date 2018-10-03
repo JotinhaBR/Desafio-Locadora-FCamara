@@ -8,6 +8,9 @@ import { FindComponent } from './painel/pages/user/find/find.component';
 import { TopComponent } from './itens-p/navbar/top/top.component';
 import { LeftComponent } from './painel/itens/navbar/left/left.component';
 import { HomeComponent } from './client/pages/home/home.component';
+import { LoginComponent } from './user/login/login.component';
+import { RegisteUserComponent } from './user/registe-user/registe-user.component';
+import { RecoverPasswordComponent } from './user/recover-password/recover-password.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { HomeComponent } from './client/pages/home/home.component';
     FindComponent,
     TopComponent,
     LeftComponent,
-    HomeComponent
+    HomeComponent,
+    LoginComponent,
+    RegisteUserComponent,
+    RecoverPasswordComponent
   ],
   imports: [
     BrowserModule,
