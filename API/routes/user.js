@@ -1,9 +1,8 @@
 var express = require('express');
 var router = express.Router();
-var config = require('../config');
 var mongodbFun = require('../mongodbFun/mongodbFun');
 
-var collectionName = "usuarios";
+var collectionName = "Users";
 
 
 

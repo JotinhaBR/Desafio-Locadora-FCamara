@@ -1,8 +1,8 @@
 var config = {};
 
 config.mongodb = {};
-config.mongodb.host = "ds121593.mlab.com";
-config.mongodb.porta = 21593;
-config.mongodb.database = "desafio-locadora-fc";
+config.mongodb.host = "localhost";
+config.mongodb.porta = 27017;
+config.mongodb.database = "db";
 
 module.exports = config;

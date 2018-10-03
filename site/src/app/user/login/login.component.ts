@@ -32,14 +32,16 @@ export class UserLoginComponent implements OnInit {
 
     this.respostaHTML = '<div class="alert alert-info" role="alert">Carregando...</div>';
 
-    if (this.fsenha == this.fsenhaconfirm) {
+    if (this.fsenha !== this.fsenhaconfirm) {
       this.respostaHTML = '<div class="alert alert-info" role="alert">ERRO: Senha não iguais !!</div>';
       setTimeout(function(){ this.respostaHTML = ''; }, 2000);
+      return;
     }
 
       this.userService.createUser(schemaUser).subscribe(res => {
         this.respostaJSON = res;
-        this.respostaHTML = 'OK: foi.';
+        this.respostaHTML = '<div class="alert alert-info" role="alert">OK: usuario registrado, agora loga-se !!</div>';
+        setTimeout(function(){ this.respostaHTML = ''; }, 2000);
       }, error => {
         this.respostaJSON = error;
       });

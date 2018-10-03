@@ -11,7 +11,7 @@ export class UserService {
   }
 
   buscarUser(json): Observable<any> {
-    return this.http.post('http://localhost:3000/user/buscar', json);
+    return this.http.get('http://localhost:3000/user/find', json);
   }
 
   deleteUser(json): Observable<any> {
