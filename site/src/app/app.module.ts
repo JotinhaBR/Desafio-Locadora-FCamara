@@ -1,6 +1,8 @@
 import { routing } from './app.routing';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { ClientHomeComponent } from './client/pages/home/home.component';
@@ -9,10 +11,10 @@ import { ClientNavbarTopComponent } from './client/itens/navbar/top/top.componen
 import { PainelUserFindComponent } from './painel/pages/user/find/find.component';
 import { PainelNavbarLeftComponent } from './painel/itens/navbar/left/left.component';
 import { UserLoginComponent } from './user/login/login.component';
-import { UserRegisteUserComponent } from './user/registe-user/registe-user.component';
 import { UserRecoverPasswordComponent } from './user/recover-password/recover-password.component';
 import { PainelNavbarTopComponent } from './painel/itens/navbar/top/top.component';
 import { PainelPagesComponent } from './painel/pages/pages.component';
+import { UserService } from './user/user.service';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,6 @@ import { PainelPagesComponent } from './painel/pages/pages.component';
     PainelNavbarLeftComponent,
     PainelHomeComponent,
     UserLoginComponent,
-    UserRegisteUserComponent,
     ClientNavbarTopComponent,
     UserRecoverPasswordComponent,
     PainelNavbarTopComponent,
@@ -30,9 +31,11 @@ import { PainelPagesComponent } from './painel/pages/pages.component';
   ],
   imports: [
     BrowserModule,
-    routing
+    routing,
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

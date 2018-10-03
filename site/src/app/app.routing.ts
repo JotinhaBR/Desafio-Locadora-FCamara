@@ -7,7 +7,7 @@ import { UserLoginComponent } from './user/login/login.component';
 const app_routes:Routes=[
     {path: '', component: ClientHomeComponent},
     {path: 'painel', component: PainelHomeComponent},
-    {path: 'user/login', component: UserLoginComponent}
+    {path: 'user/login', component: UserLoginComponent},
     {path: 'user/:id', component: UserLoginComponent}
 ];
 
