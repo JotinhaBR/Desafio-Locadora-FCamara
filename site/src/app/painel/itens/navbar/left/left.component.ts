@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-left',
+  selector: 'painel-navbar-left',
   templateUrl: './left.component.html',
   styleUrls: ['./left.component.scss']
 })
-export class LeftComponent implements OnInit {
+export class PainelNavbarLeftComponent implements OnInit {
 
   constructor() { }
 

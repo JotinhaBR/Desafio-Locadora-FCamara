@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FindComponent } from './find.component';
+import { PainelUserFindComponent } from './find.component';
 
-describe('FindComponent', () => {
-  let component: FindComponent;
-  let fixture: ComponentFixture<FindComponent>;
+describe('PainelUserFindComponent', () => {
+  let component: PainelUserFindComponent;
+  let fixture: ComponentFixture<PainelUserFindComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FindComponent ]
+      declarations: [ PainelUserFindComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FindComponent);
+    fixture = TestBed.createComponent(PainelUserFindComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

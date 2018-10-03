@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-find',
+  selector: 'painel-user-find',
   templateUrl: './find.component.html',
   styleUrls: ['./find.component.scss']
 })
-export class FindComponent implements OnInit {
+export class PainelUserFindComponent implements OnInit {
 
   constructor() { }
 
