@@ -10,6 +10,6 @@ export class PainelNavbarTopComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-  }
+  } 
 
 }

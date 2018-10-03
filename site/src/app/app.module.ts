@@ -12,6 +12,7 @@ import { UserLoginComponent } from './user/login/login.component';
 import { UserRegisteUserComponent } from './user/registe-user/registe-user.component';
 import { UserRecoverPasswordComponent } from './user/recover-password/recover-password.component';
 import { PainelNavbarTopComponent } from './painel/itens/navbar/top/top.component';
+import { PainelPagesComponent } from './painel/pages/pages.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { PainelNavbarTopComponent } from './painel/itens/navbar/top/top.componen
     UserRegisteUserComponent,
     ClientNavbarTopComponent,
     UserRecoverPasswordComponent,
-    PainelNavbarTopComponent
+    PainelNavbarTopComponent,
+    PainelPagesComponent
   ],
   imports: [
     BrowserModule,
