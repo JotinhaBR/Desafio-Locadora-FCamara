@@ -6,7 +6,7 @@ var config = require('./mongodbFunConfig');
 function create(cName, query, database = config.mongodb.database) {
     return new Promise((resolve, reject) => {
 
-        var config = require('../config');
+        
         var MongoClient = require('mongodb').MongoClient;
         var url = "mongodb://" + config.mongodb.host + ":" + config.mongodb.porta + "/" + database + "";
         var urlO = { useNewUrlParser: true };
@@ -58,7 +58,7 @@ function create(cName, query, database = config.mongodb.database) {
 function find(cName, query, database = config.mongodb.database) {
     return new Promise((resolve, reject) => {
 
-        var config = require('../config');
+        
         var MongoClient = require('mongodb').MongoClient;
         var url = "mongodb://" + config.mongodb.host + ":" + config.mongodb.porta + "/" + database + "";
         var urlO = { useNewUrlParser: true };
@@ -108,7 +108,7 @@ function find(cName, query, database = config.mongodb.database) {
 function remove(cName, query, database = config.mongodb.database) {
     return new Promise((resolve, reject) => {
 
-        var config = require('../config');
+        
         var MongoClient = require('mongodb').MongoClient;
         var url = "mongodb://" + config.mongodb.host + ":" + config.mongodb.porta + "/" + database + "";
         var urlO = { useNewUrlParser: true };
@@ -158,7 +158,7 @@ function remove(cName, query, database = config.mongodb.database) {
 function update(cName, query, jsonNew, database = config.mongodb.database) {
     return new Promise((resolve, reject) => {
 
-        var config = require('../config');
+        
         var MongoClient = require('mongodb').MongoClient;
         var url = "mongodb://" + config.mongodb.host + ":" + config.mongodb.porta + "/" + database + "";
         var urlO = { useNewUrlParser: true };
