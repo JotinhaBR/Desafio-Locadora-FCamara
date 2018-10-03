@@ -1,0 +1,20 @@
+.fundoNavTop {
+  background-color: darkcyan;
+  padding: 2em;
+}
+
+.linkNavTop {
+  text-decoration: none;
+  color: lightgoldenrodyellow;
+  margin-right: 30px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+  font-size: 1em;
+}
+
+.linkNavTop:hover {
+  border-bottom: 1px solid lightgoldenrodyellow;
+}
+
+/*# sourceMappingURL=top.component.css.map */
