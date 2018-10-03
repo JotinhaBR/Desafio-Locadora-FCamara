@@ -1,4 +1,4 @@
-<div class="bodyC">
+<div class="bL">
 <div class="container">
   <div class="row mt-5 mb-5">
     <div class="col-6">
@@ -16,11 +16,15 @@
           <input class="form-check-input" type="checkbox"> Remember me
         </label>
       </div>
-      <button type="submit" class="btn btn-secondary bot-form">Logar</button>
+      <button type="submit" class="btn btn-secondary bot-form" routerLink=''>Logar</button>
     </div>
 <!--////////////////////////////////////////////////////////////-->
 <div class="col-6">
     <h5 class="display-4 mb-3">Cadastre-se</h5>
+    <div class="form-group">
+        <label for="text">Id:</label>
+        <input #idUsuario type="text" class="form-control" id="Id">
+      </div>
     <div class="form-group">
       <label for="email">Nome Completo:</label>
       <input type="email" class="form-control" id="email">
@@ -45,7 +49,7 @@
     </div>
     </div>
     
-    <button type="submit" class="btn btn-secondary bot-form">Enviar</button>
+    <button type="submit" class="btn btn-secondary bot-form" routerLink=''>Enviar</button>
   </div>
 
 </div>
