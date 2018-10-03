@@ -18,6 +18,10 @@ export class UserService {
    return this.http.delete('http://localhost:3000/user/deletar', json);
   }
 
+  loginUser(json): Observable<any> {
+    return this.http.post('http://localhost:3000/user/login', json);
+  }
+
   // getCat(name: string): Observable<any> {
   //   return this.http.get<Cat>('http://localhost:8000/api/cats/' + name);
   // }
