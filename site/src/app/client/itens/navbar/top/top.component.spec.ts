@@ -10,7 +10,7 @@ describe('TopComponent', () => {
     TestBed.configureTestingModule({
       declarations: [ TopComponent ]
     })
-    .compileComponents(); 
+    .compileComponents();
   }));
 
   beforeEach(() => {

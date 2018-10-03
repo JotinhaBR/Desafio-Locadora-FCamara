@@ -1,22 +1,22 @@
-import { routing } from './app-routing';
+import { routing } from './app.routing';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { HomeComponentPainel } from './painel/pages/home/home.component';
 import { FindComponent } from './painel/pages/user/find/find.component';
-import { TopComponent } from './itens-p/navbar/top/top.component';
 import { LeftComponent } from './painel/itens/navbar/left/left.component';
-import { HomeComponent } from './client/pages/home/home.component';
+import { TopComponent } from './client/itens/navbar/top/top.component';
+import { ClientHomeComponent } from './client/pages/home/home.component';
+import { PainelHomeComponent } from './painel/pages/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponentPainel,
+    PainelHomeComponent,
     FindComponent,
-    TopComponent,
     LeftComponent,
-    HomeComponent
+    ClientHomeComponent,
+    TopComponent
   ],
   imports: [
     BrowserModule,
