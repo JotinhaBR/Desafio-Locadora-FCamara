@@ -6,9 +6,10 @@
   float: right;
 }
 
-body {
-  background-color: lightsalmon;
-  padding: 40px;
+.bodyC {
+  background-color: lightsalmon!important;
+  padding-top: 5em;
+  padding-bottom: 5em;
   color: aliceblue;
 }
 

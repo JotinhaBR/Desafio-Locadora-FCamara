@@ -8,6 +8,7 @@ const app_routes:Routes=[
     {path: '', component: ClientHomeComponent},
     {path: 'painel', component: PainelHomeComponent},
     {path: 'user/login', component: UserLoginComponent},
+    {path: 'user/register', component: UserLoginComponent},
     {path: 'user/:id', component: UserLoginComponent}
 ];
 

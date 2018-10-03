@@ -1,14 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../user.service';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'user-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+  styleUrls: ['./login.component.css','./login.component.scss']
 })
 export class UserLoginComponent implements OnInit {
 
-  constructor(public userService: UserService) { }
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router,
+    public userService: UserService
+    ) { }
 
   ngOnInit() {
 
@@ -32,16 +37,19 @@ export class UserLoginComponent implements OnInit {
 
     this.respostaHTML = '<div class="alert alert-info" role="alert">Carregando...</div>';
 
+    if ((!this.fnome) || (!this.femail) || (!this.fsenha) || (!this.fsenhaconfirm)) {
+      this.respostaHTML = '<div class="alert alert-info" role="alert">ERRO: Algum campo não foi preenchido !!</div>';
+      return;
+    }
     if (this.fsenha !== this.fsenhaconfirm) {
       this.respostaHTML = '<div class="alert alert-info" role="alert">ERRO: Senha não iguais !!</div>';
-      setTimeout(function(){ this.respostaHTML = ''; }, 2000);
       return;
     }
 
       this.userService.createUser(schemaUser).subscribe(res => {
         this.respostaJSON = res;
         this.respostaHTML = '<div class="alert alert-info" role="alert">OK: usuario registrado, agora loga-se !!</div>';
-        setTimeout(function(){ this.respostaHTML = ''; }, 2000);
+        this.router.navigate(['/painel'])
       }, error => {
         this.respostaJSON = error;
       });

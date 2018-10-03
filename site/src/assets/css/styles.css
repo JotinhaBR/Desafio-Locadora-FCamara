@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+
+.btn-linkNavTOP{
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.50);
+    color: black;
+    border: 0px;
+    margin: 5px;
+}
+.btn-linkNavTOP:hover{
+    box-shadow: 0 0 0.3rem 0.1rem rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.80);
+    color: black;
+}
+.btn-linkNavTOP:active{
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.3)!important;
+    background-color: rgba(255, 255, 255, 0.90)!important;
+    color: black!important;
+}
+.btn-linkNavTOP:focus{
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.3);
+}
