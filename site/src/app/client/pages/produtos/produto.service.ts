@@ -11,7 +11,7 @@ export class FilmeService {
   }
 
   buscarFilme(json): Observable<any> {
-    return this.http.get('http://localhost:3000/produto/find', json);
+    return this.http.get('http://localhost:3000/filme/find', json);
   }
 
   deleteFilme(json): Observable<any> {

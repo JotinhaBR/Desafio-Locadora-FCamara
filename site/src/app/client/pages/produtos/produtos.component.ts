@@ -9,7 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProdutosComponent implements OnInit {
 
-  constructor(
+  respostaJson: any[]=[];
+   constructor(
     private route: ActivatedRoute,
     private router: Router,
     public filmeService: FilmeService) { }
@@ -17,7 +18,7 @@ export class ProdutosComponent implements OnInit {
   ngOnInit() {
 
     this.filmeService.buscarFilme({}).subscribe(res => {
-      alert(res);
+      this.respostaJson=res;
     });
 
   }
