@@ -19,6 +19,7 @@ import { PainelUserEditComponent } from './painel/pages/user/edit/edit.component
 import { PainelUserAddComponent } from './painel/pages/user/add/add.component';
 import { ProdutosComponent } from './client/pages/produtos/produtos.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
