@@ -16,6 +16,7 @@ import { PainelNavbarTopComponent } from './painel/itens/navbar/top/top.componen
 import { UserService } from './user/user.service';
 import { ProdutosComponent } from './client/pages/produtos/produtos.component'
 
+
 @NgModule({
   declarations: [
     AppComponent,
