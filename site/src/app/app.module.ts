@@ -1,4 +1,4 @@
-import { routing } from './app.routing';
+import { appRouting } from './app.routing';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -13,8 +13,8 @@ import { PainelNavbarLeftComponent } from './painel/itens/navbar/left/left.compo
 import { UserLoginComponent } from './user/login/login.component';
 import { UserRecoverPasswordComponent } from './user/recover-password/recover-password.component';
 import { PainelNavbarTopComponent } from './painel/itens/navbar/top/top.component';
-import { PainelPagesComponent } from './painel/pages/pages.component';
 import { UserService } from './user/user.service';
+import { PainelComponent } from './painel/painel.component';
 
 @NgModule({
   declarations: [
@@ -27,11 +27,11 @@ import { UserService } from './user/user.service';
     ClientNavbarTopComponent,
     UserRecoverPasswordComponent,
     PainelNavbarTopComponent,
-    PainelPagesComponent
+    PainelComponent
   ],
   imports: [
     BrowserModule,
-    routing,
+    appRouting,
     HttpClientModule,
     FormsModule
   ],
