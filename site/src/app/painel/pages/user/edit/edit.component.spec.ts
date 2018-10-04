@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PainelUserFindComponent } from './find.component';
+import { PainelUserEditComponent } from './edit.component';
 
-describe('PainelUserFindComponent', () => {
-  let component: PainelUserFindComponent;
-  let fixture: ComponentFixture<PainelUserFindComponent>;
+describe('PainelUserEditComponent', () => {
+  let component: PainelUserEditComponent;
+  let fixture: ComponentFixture<PainelUserEditComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ PainelUserFindComponent ]
+      declarations: [ PainelUserEditComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PainelUserFindComponent);
+    fixture = TestBed.createComponent(PainelUserEditComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
