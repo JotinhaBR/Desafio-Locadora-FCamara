@@ -21,6 +21,8 @@ var router = require('./routes/index');
 app.use('/', router);
 var router = require('./routes/user');
 app.use('/user', router);
+var router = require('./routes/filmes');
+app.use('/filmes', router);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

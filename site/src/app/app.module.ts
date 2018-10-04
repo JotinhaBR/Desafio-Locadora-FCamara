@@ -1,3 +1,4 @@
+import { FilmeService } from './client/pages/produtos/produto.service';
 import { appRouting } from './app.routing';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -42,7 +43,7 @@ import { ProdutosComponent } from './client/pages/produtos/produtos.component';
     HttpClientModule,
     FormsModule
   ],
-  providers: [UserService],
+  providers: [UserService, FilmeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
