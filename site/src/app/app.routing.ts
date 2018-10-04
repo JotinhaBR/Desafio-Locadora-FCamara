@@ -1,3 +1,4 @@
+import { ProdutosComponent } from './client/pages/produtos/produtos.component';
 import { ClientHomeComponent } from './client/pages/home/home.component';
 import { Routes, RouterModule } from '@angular/router';
 import { ModuleWithProviders, Component } from '@angular/core';
@@ -7,16 +8,24 @@ import { PainelHomeComponent } from './painel/pages/home/home.component';
 import { PainelUserListComponent } from './painel/pages/user/list/list.component';
 import { PainelUserAddComponent } from './painel/pages/user/add/add.component';
 import { PainelUserEditComponent } from './painel/pages/user/edit/edit.component';
+import { AppComponent } from './app.component';
 
 
 
 
 const appRoutes: Routes = [
     { path: '', component: ClientHomeComponent },
-    { path: 'user/login', component: UserLoginComponent },
-    { path: 'user/register', component: UserLoginComponent },
-    { path: 'user/:id', component: UserLoginComponent },
+    { path: 'filmes', component: ProdutosComponent },
 
+
+    
+    // Rotas do painel
+    { path: 'user', component: AppComponent,
+        children: [
+            { path: 'login', component: UserLoginComponent },
+            { path: 'register', component: UserLoginComponent },
+        ]
+    },
 
 
     // Rotas do painel

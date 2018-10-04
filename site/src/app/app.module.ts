@@ -17,6 +17,7 @@ import { PainelComponent } from './painel/painel.component';
 import { PainelUserListComponent } from './painel/pages/user/list/list.component';
 import { PainelUserEditComponent } from './painel/pages/user/edit/edit.component';
 import { PainelUserAddComponent } from './painel/pages/user/add/add.component';
+import { ProdutosComponent } from './client/pages/produtos/produtos.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { PainelUserAddComponent } from './painel/pages/user/add/add.component';
     PainelComponent,
     PainelUserListComponent,
     PainelUserEditComponent,
-    PainelUserAddComponent
+    PainelUserAddComponent,
+    ProdutosComponent
   ],
   imports: [
     BrowserModule,
