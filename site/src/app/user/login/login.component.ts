@@ -20,7 +20,7 @@ export class UserLoginComponent implements OnInit {
 
   }
 
-  respostaJSON: any[] = [];
+  // div para alertas
   respostaHTML: any;
 
    // form register inputs
@@ -33,6 +33,7 @@ export class UserLoginComponent implements OnInit {
    flemail: string;
    flsenha: string;
 
+   // função do form de login
   loginClickOn(){
     var schemaLogin = {
       email: this.flemail,
@@ -42,7 +43,6 @@ export class UserLoginComponent implements OnInit {
     this.respostaHTML = '<div class="alert alert-info" role="alert">Carregando...</div>';
 
     this.userService.loginUser(schemaLogin).subscribe(res => {
-      this.respostaJSON = res;
       if (res['motivo']){
         this.respostaHTML = '<div class="alert alert-info" role="alert">ERRO: '+res['motivo']+'</div>';
       }else
@@ -55,15 +55,16 @@ export class UserLoginComponent implements OnInit {
 
       }
     }, error => {
-      this.respostaJSON = error;
+      this.respostaHTML = '<div class="alert alert-info" role="alert">ERRO: '+error+'.</div>';
     });
 
   }
 
 
+  // função form register
   registerClickOn() {
     var varToken = Md5.hashAsciiStr(""+Math.floor((Math.random() * 9999) + 1));
-    var schemaUser = {
+    var schemaRegister = {
       nome: this.frnome,
       email: this.fremail,
       senha: this.frsenha,
@@ -82,12 +83,11 @@ export class UserLoginComponent implements OnInit {
       return;
     }
 
-      this.userService.createUser(schemaUser).subscribe(res => {
-        this.respostaJSON = res;
+      this.userService.createUser(schemaRegister).subscribe(res => {
         this.respostaHTML = '<div class="alert alert-info" role="alert">OK: usuario registrado, agora loga-se !!</div>';
         this.router.navigate(['/painel'])
       }, error => {
-        this.respostaJSON = error;
+        this.respostaHTML = '<div class="alert alert-info" role="alert">ERRO: '+error+'.</div>';
       });
 
   }
