@@ -1,33 +1,22 @@
 <nav class="navbar navbar-expand-sm fundoNavTop">
   <div class="container">
-    <a class="linkNavTop">Livraria</a>
+    <a class="linkNavTop" [routerLink]="['/']">Locadora</a>
     <ul class="navbar-nav">
       <li class="nav-item active ">
         <a class="nav-link linkNavTop" [routerLink]="['/']">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link linkNavTop" [routerLink]="['/contato']">Contato</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link linkNavTop">Ajuda</a>
+        <a class="nav-link linkNavTop" [routerLink]="['/filmes']">Filmes</a>
       </li>
 
-      <li class="nav-item">
-<<<<<<< HEAD
-        <a class="btn btn-sm btn-outline-secondary btn-linkNavTOP" [routerLink]="['user/login']" >Logar-se</a>
-=======
-        <a class="btn btn-sm btn-outline-secondary btn-linkNavTOP" [routerLink]="['user/produtos']"  href="#">Produtos</a>
-      </li>
+
+
 
       <li class="nav-item">
-        <a class="btn btn-sm btn-outline-secondary btn-linkNavTOP" [routerLink]="['user/login']"  href="#">Logar-se</a>
->>>>>>> 465917df85738a0ff44b852e65cf382c35b83cfb
+        <a class="btn btn-sm btn-outline-secondary btn-linkNavTOP" [routerLink]="['/user/login']">Logar-se</a>
       </li>
-      
-      
-
       <li class="nav-item">
-        <a class="btn btn-sm btn-outline-secondary btn-linkNavTOP" [routerLink]="['user/register']" >Registrar-se</a>
+        <a class="btn btn-sm btn-outline-secondary btn-linkNavTOP" [routerLink]="['/user/register']" >Registrar-se</a>
       </li>
       
     </ul>
