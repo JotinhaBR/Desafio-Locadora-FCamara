@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 var $  = require( 'jquery' );
-require( 'datatables.net-bs4' );
+require( 'datatables.net-bs4' )();
 
 @Component({
   selector: 'painel-page-user-list',
@@ -9,10 +9,14 @@ require( 'datatables.net-bs4' );
 })
 export class PainelUserListComponent implements OnInit {
 
-  constructor() {}
+  constructor() {
+
+    this.AtivarDataTable();
+
+   }
 
   ngOnInit() {
-    this.AtivarDataTable();
+
   }
 
   AtivarDataTable(){
