@@ -15,6 +15,7 @@ import { UserRecoverPasswordComponent } from './user/recover-password/recover-pa
 import { PainelNavbarTopComponent } from './painel/itens/navbar/top/top.component';
 import { PainelPagesComponent } from './painel/pages/pages.component';
 import { UserService } from './user/user.service';
+import { ProdutosComponent } from './client/pages/produtos/produtos.component'
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { UserService } from './user/user.service';
     ClientNavbarTopComponent,
     UserRecoverPasswordComponent,
     PainelNavbarTopComponent,
-    PainelPagesComponent
+    PainelPagesComponent,
+    ProdutosComponent
   ],
   imports: [
     BrowserModule,
